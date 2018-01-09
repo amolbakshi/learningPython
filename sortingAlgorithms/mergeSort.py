@@ -35,5 +35,5 @@ def merge(left,right):
 randomList = random.sample(range(0, 10000), 40)
 print ("Unsorted list : ")
 print(randomList)
-print("List sorted with insertionSort : ")
+print("List sorted with merge sort : ")
 print(merge_sort(randomList))
