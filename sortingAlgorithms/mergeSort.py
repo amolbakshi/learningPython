@@ -32,8 +32,8 @@ def merge(left,right):
         answer.extend(right[j:])
     return answer
 
-randomList = random.sample(range(0, 10000), 40)
-print ("Unsorted list : ")
-print(randomList)
-print("List sorted with merge sort : ")
-print(merge_sort(randomList))
+#randomList = random.sample(range(0, 10000), 40)
+#print ("Unsorted list : ")
+#print(randomList)
+#print("List sorted with merge sort : ")
+#print(merge_sort(randomList))

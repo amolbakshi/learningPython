@@ -31,7 +31,7 @@
 import math
 # math.acos(x) is the arccosine of x.
 # math.sqrt(x) is the square root of x.
-
+from sortingAlgorithms import mergeSort
 import sys
 
 
@@ -146,7 +146,8 @@ def word_frequencies_for_file(filename):
     line_list = read_file(filename)
     word_list = get_words_from_line_list(line_list)
     freq_mapping = count_frequency(word_list)
-    insertion_sort(freq_mapping)
+    mergeSort.merge_sort(freq_mapping)
+    #insertion_sort(freq_mapping)
 
     print("File", filename, ":",)
     print(len(line_list), "lines,",)
