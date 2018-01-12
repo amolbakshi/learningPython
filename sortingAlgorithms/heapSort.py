@@ -1,4 +1,5 @@
 import random
+import time
 # To heapify subtree rooted at index i.
 # n is size of heap
 def heapify(arr, n, i):
@@ -38,8 +39,10 @@ def heapSort(arr):
         heapify(arr, i, 0)
     return arr
 
-randomList = random.sample(range(0, 10000), 10)
+randomList = random.sample(range(0, 1000000000), 10000000)
 print ("Unsorted list : ")
-print(randomList)
+#print(randomList)
 print("List sorted with merge sort : ")
-print(heapSort(randomList))
+start = time.clock()
+heapSort(randomList)
+print(time.clock()-start)
