@@ -22,7 +22,9 @@ def processISDA():
             #chunkParser = nltk.RegexpParser(grammar)
             #chunked = chunkParser.parse(tagged)
             namedEntity = nltk.ne_chunk(tagged)
-            namedEntity.draw()
+            for w in namedEntity:
+                if hasattr(w, '_label') and w._label == 'ORGANIZATION':
+                    print(w[0][0])
             #print(namedEntity)
     except Exception as e:
         print(e)
